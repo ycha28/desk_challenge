@@ -1,19 +1,17 @@
 desk_challenge = angular.module('desk-challenge',[
   'templates',
   'ngRoute',
-  'controllers'
+  'caseControllers'
 ])
 
 desk_challenge.config([ '$routeProvider', 
   ($routeProvider) ->
     $routeProvider
-      .when('/',
-        templateUrl: 'index.html'
-        controller: 'HomeController'
+      .when('/cases', 
+        templateUrl: 'partials/case-list.html',
+        controller: 'CaseListController'
       )
-])
-
-controllers = angular.module('controllers', [])
-controllers.controller('HomeController', [ '$scope',
-  ($scope) ->
+      .otherwise(
+        redirectTo: '/cases'
+      )
 ])

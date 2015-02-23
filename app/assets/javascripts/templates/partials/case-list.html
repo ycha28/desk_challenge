@@ -1,0 +1,25 @@
+<section class="row">
+  <section class="col-md-9">
+    <table class="table">
+      <tr>
+        <th>Status</th>
+        <th>Subject</th>
+        <th>Customer</th>
+        <th>Updated</th>
+        <th>Assigned</th>
+        <th>Priority</th>
+      </tr>
+      <tr ng-repeat="case in cases">
+        <td>{{case.status}}</td>
+        <td>{{case.subject}}</td>
+        <td>{{case.customer}}</td>
+        <td>{{case.updated_at}}</td>
+        <td>{{case.assigned}}</td>
+        <td>{{case.priority}}</td>
+      </tr>
+    </table>
+  </section>
+  <section class="sidebar col-md-3">
+    <h2 class="text-center">SIDEBAR</h2>
+  </section>
+</section>
