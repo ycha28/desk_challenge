@@ -44,6 +44,7 @@ group :development, :test do
   gem 'zeus'
   gem 'pry'
   gem 'pry-debugger'
+  gem 'dotenv-rails'
 end
 
 group :production do
