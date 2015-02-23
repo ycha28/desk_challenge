@@ -11,9 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150223033144) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cases", force: true do |t|
+    t.integer  "service_id"
+    t.text     "blurb"
+    t.string   "subject"
+    t.integer  "priority"
+    t.text     "description"
+    t.string   "status"
+    t.string   "type"
+    t.datetime "changed_at"
+    t.datetime "active_at"
+    t.datetime "received_at"
+    t.datetime "locked_until"
+    t.datetime "first_oened_at"
+    t.datetime "opened_at"
+    t.datetime "first_resolved_at"
+    t.datetime "resolved_at"
+  end
 
 end

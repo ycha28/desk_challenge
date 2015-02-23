@@ -29,6 +29,7 @@ gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'desk'
 gem 'foreman'
+gem 'sidekiq'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
