@@ -6,6 +6,8 @@ gem 'rails', '4.0.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+gem 'puma'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -30,6 +32,7 @@ gem 'angular-rails-templates'
 gem 'desk'
 gem 'foreman'
 gem 'sidekiq'
+gem 'sinatra' #for Sidekiq::Web
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -43,7 +46,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'zeus'
-  gem 'pry'
+  gem 'pry-rails'
   gem 'pry-debugger'
   gem 'dotenv-rails'
 end
