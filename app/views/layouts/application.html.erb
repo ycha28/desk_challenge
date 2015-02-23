@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="desk_challenge">
+<html>
 <head>
   <title>DeskChallenge</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -8,9 +8,7 @@
 </head>
 <body>
 
-<div ng-view>
-  <%= yield %>
-</div>
+<%= yield %>
 
 </body>
 </html>
