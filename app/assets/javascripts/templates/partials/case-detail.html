@@ -1,12 +1,45 @@
 <section class="row">
-  <section class="col-md-9">
+  <section class="col-md-8">
     <h4>Case #{{case.id}}</h4>
-    <h3>{{case.subject}}</h3>
-    <p>
-      {{case.blurb}}
-    </p>
+    <h3>{{subject}}</h3>
+    <div ng-bind-html="message"></div>
   </section>
-  <section class="col-md-3">
+  <section class="col-md-4">
     <h4>Case Details</h4>
+    <form class="form-horizontal" ng-submit="update()">
+      <div class="form-group">
+        <div class="col-md-6">
+          <label for="status">Status</label>
+          <select class="form-control" ng-model="selectedStatus" ng-options='statusOption.name for statusOption in statusOptions' required></select>
+        </div>  
+        <div class="col-md-6">
+          <label for="priority">Priority</label>
+          <select class="form-control" ng-model="selectedPriority" ng-options='priorityOption.name for priorityOption in priorityOptions' required></select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <label for="labels">Labels</label>
+          <input type="text" class="form-control" name="labels"></input>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" name="subject" ng-model="case.subject" required></input>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <label for="description">Description</label>
+          <textarea class="form-control" name="description" rows="6" ng-model="case.description"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-default">Update</button>
+        </div>
+      </div>
+    </div>
   </section>
 </section>
