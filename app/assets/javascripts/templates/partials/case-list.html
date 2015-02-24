@@ -1,5 +1,5 @@
 <section class="row">
-  <section class="col-md-9">
+  <section class="col-md-12">
     <table class="table">
       <tr>
         <th>Status</th>
@@ -9,17 +9,14 @@
         <th>Assigned</th>
         <th>Priority</th>
       </tr>
-      <tr ng-repeat="case in cases">
+      <tr ng-repeat="case in cases" ng-click="openCase(case)">
         <td>{{case.status}}</td>
         <td>{{case.subject}}</td>
         <td>{{case.customer}}</td>
-        <td>{{case.updated_at}}</td>
+        <td>{{case.remote_updated_at | date : 'MMM d, yyyy'}}</td>
         <td>{{case.assigned}}</td>
         <td>{{case.priority}}</td>
       </tr>
     </table>
-  </section>
-  <section class="sidebar col-md-3">
-    <h2 class="text-center">SIDEBAR</h2>
   </section>
 </section>

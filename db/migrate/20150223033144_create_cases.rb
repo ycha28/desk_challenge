@@ -7,7 +7,7 @@ class CreateCases < ActiveRecord::Migration
       t.integer :priority
       t.text :description
       t.string :status
-      t.datetime :changed_at
+      t.datetime :remote_updated_at
     end
   end
 end

@@ -5,6 +5,6 @@ class Case < ActiveRecord::Base
     self.priority = params.priority
     self.description = params.description
     self.status = params.status
-    self.changed_at = params.changed_at
+    self.remote_updated_at = params.updated_at
   end
 end

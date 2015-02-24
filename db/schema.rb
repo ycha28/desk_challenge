@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150223033144) do
     t.integer  "priority"
     t.text     "description"
     t.string   "status"
-    t.datetime "changed_at"
+    t.datetime "remote_updated_at"
   end
 
 end

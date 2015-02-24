@@ -1,6 +1,6 @@
 DeskChallenge::Application.routes.draw do
   root 'home#index'
-  resources :cases, :only => [:index]
+  resources :cases, :only => [:index, :show]
 
   # Sidekiq administration
   require 'sidekiq/web'
