@@ -11,3 +11,5 @@ json.message do
     :remote_created_at,
     :body
 end
+
+json.labels desk_case.labels, :id, :name

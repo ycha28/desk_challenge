@@ -24,6 +24,6 @@ class CasesController < ApplicationController
   private
 
   def case_params
-    params.require(:case).permit(:subject, :priority, :description, :status)
+    params.permit(:subject, :priority, :description, :status).merge(params.slice(:label_ids))
   end
 end
