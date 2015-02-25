@@ -7,6 +7,18 @@ class LabelsController < ApplicationController
   end
 
   def create
-    
+    @label = Label.new(label_params)
+
+    if @label.save
+      head :ok
+    else
+      respond_with @label.errors.full_messages
+    end
+  end
+
+  private
+
+  def label_params
+    params.require(:label).permit(:name)
   end
 end

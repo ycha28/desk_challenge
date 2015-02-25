@@ -5,6 +5,7 @@ desk_challenge = angular.module('desk-challenge',[
   'caseControllers',
   'labelControllers',
   'caseServices',
+  'labelServices',
   'isteven-multi-select'
 ])
 
