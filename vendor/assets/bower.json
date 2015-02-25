@@ -5,7 +5,7 @@
     "angular-route": "latest",
     "angular-resource": "latest",
     "angular-sanitize": "latest",
-    "angular-ui-select": "latest",
+    "angular-multi-select": "latest",
     "bootstrap-sass-official": "latest"
   }
 }

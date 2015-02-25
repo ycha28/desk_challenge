@@ -1,4 +1,4 @@
-caseControllers = angular.module('caseControllers', ['ngSanitize', 'ui.select'])
+caseControllers = angular.module('caseControllers', ['ngSanitize'])
 
 caseControllers.controller('CaseListController', [ '$scope', 'Case', '$location'
   ($scope, Case, $location) ->

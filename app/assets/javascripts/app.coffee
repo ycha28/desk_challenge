@@ -2,7 +2,8 @@ desk_challenge = angular.module('desk-challenge',[
   'templates',
   'ngRoute',
   'caseControllers',
-  'caseServices'
+  'caseServices',
+  'isteven-multi-select'
 ])
 
 desk_challenge.config([ '$routeProvider', 

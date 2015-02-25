@@ -17,5 +17,5 @@
 //= require angular-resource/angular-resource
 //= require angular-rails-templates
 //= require angular-sanitize/angular-sanitize
-//= require angular-ui-select/dist/select
+//= require angular-multi-select/isteven-multi-select
 //= require_tree .
