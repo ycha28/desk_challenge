@@ -1,5 +1,5 @@
 <section class="row">
-  <section class="col-md-12">
+  <section class="col-md-8">
     <table class="table">
       <tr>
         <th>Status</th>
@@ -18,5 +18,13 @@
         <td>{{case.priority}}</td>
       </tr>
     </table>
+  </section>
+  <section class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">Filters</div>
+      <div class="list-group">
+        <a href="#/cases" class="list-group-item" ng-repeat="filter in filters">{{filter.name}}</a>
+      </div>
+    </div>
   </section>
 </section>

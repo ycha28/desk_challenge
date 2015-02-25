@@ -1,7 +1,9 @@
 desk_challenge = angular.module('desk-challenge',[
   'templates',
   'ngRoute',
+  'headerController',
   'caseControllers',
+  'labelControllers',
   'caseServices',
   'isteven-multi-select'
 ])
@@ -10,12 +12,16 @@ desk_challenge.config([ '$routeProvider',
   ($routeProvider) ->
     $routeProvider
       .when('/cases', 
-        templateUrl: 'partials/case-list.html',
+        templateUrl: 'cases/index.html',
         controller: 'CaseListController'
       )
       .when('/cases/:caseId',
-        templateUrl: 'partials/case-detail.html',
+        templateUrl: 'cases/show.html',
         controller: 'CaseDetailController'
+      )
+      .when('/labels',
+        templateUrl: 'labels/index.html',
+        controller: 'LabelListController'
       )
       .otherwise(
         redirectTo: '/cases'

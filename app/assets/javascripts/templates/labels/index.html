@@ -1,0 +1,28 @@
+<section class="row">
+  <section class="col-md-8">
+    <table class="table">
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr ng-repeat="label in labels">
+        <td>{{label.name}}</td>
+      </tr>
+    </table>
+  </section>
+  <section class="col-md-4">
+    <h4>New Label</h4>
+    <form class="form-horizontal" ng-submit="create()">
+      <div class="form-group">
+        <div class="col-md-12">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" ng-model="label.name" required></input>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-default">Create</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

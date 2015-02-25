@@ -3,6 +3,10 @@ caseControllers = angular.module('caseControllers', ['ngSanitize'])
 caseControllers.controller('CaseListController', [ '$scope', 'Case', '$location'
   ($scope, Case, $location) ->
     $scope.cases = Case.index()
+    $scope.filters = [
+      {name: 'Unassigned', value: 'unassigned'},
+      {name: 'All', value: 'all'}
+    ]
 
     $scope.openCase = (client) ->
       $location.path('/cases/' + client.id)

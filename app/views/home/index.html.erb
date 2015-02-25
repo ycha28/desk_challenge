@@ -1,7 +1,19 @@
 <div ng-app="desk-challenge">
   <div class="container">
-    <header class="row">
-      <h1 class="text-center col-md-6 col-md-offset-3">Desk Cases</h1>
+    <header>
+      <div class="row">
+        <h1 class="text-center col-md-6 col-md-offset-3">Desk Cases</h1>
+      </div>
+      <div class="row">
+        <ul class="nav nav-pills" ng-controller="HeaderController">
+          <li role="presentation" ng-class="{ active: isActive('#/') }">
+            <a href='#/cases'>Cases</a>
+          </li>
+          <li role="presentation" ng-class="{ active: isActive('#/labels') }">
+            <a href='#/labels'>Labels</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <div ng-view></div>
   </div>
