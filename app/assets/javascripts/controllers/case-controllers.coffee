@@ -1,4 +1,4 @@
-caseControllers = angular.module('caseControllers', ['ngSanitize'])
+caseControllers = angular.module('caseControllers', ['ngSanitize', 'ui.select'])
 
 caseControllers.controller('CaseListController', [ '$scope', 'Case', '$location'
   ($scope, Case, $location) ->
@@ -17,8 +17,13 @@ caseControllers.controller('CaseDetailController', ['$scope', '$routeParams', '$
       $scope.selectedPriority = (option for option in $scope.priorityOptions when option.value == deskCase.priority.toString())[0]
     )
 
+    $scope.label = {}
     $scope.statusOptions = statusOptions
     $scope.priorityOptions = priorityOptions
+    $scope.labelOptions = [
+      {name: 'Unassigned', value: 'unassigned'},
+      {name: 'All', value: 'all'}
+    ]
 
     $scope.update = () ->
       $scope.case.status = $scope.selectedStatus.value

@@ -20,7 +20,12 @@
       <div class="form-group">
         <div class="col-md-12">
           <label for="labels">Labels</label>
-          <input type="text" class="form-control" name="labels"></input>
+          <ui-select multiple ng-model="case.labels" theme="bootstrap">
+            <ui-select-match placeholder="Select label...">{{$item.name}}</ui-select-match>
+            <ui-select-choices repeat="labelOption.name as labelOption in labelOptions">
+              <div ng-bind-html="labelOption.name"></div>
+            </ui-select-choices>
+          </ui-select>
         </div>
       </div>
       <div class="form-group">
