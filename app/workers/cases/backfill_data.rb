@@ -1,4 +1,4 @@
-class Cases::DailyScraper
+class Cases::BackfillData
   include Sidekiq::Worker
   sidekiq_options queue: 'cases'
 

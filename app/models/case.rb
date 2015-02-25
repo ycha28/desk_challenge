@@ -1,5 +1,6 @@
 class Case < ActiveRecord::Base
-  has_one :message
+  has_one :message, :dependent => :destroy
+  has_and_belongs_to_many :labels
 
   def backfill_data(params)
     self.service_id = params.id
@@ -9,16 +10,16 @@ class Case < ActiveRecord::Base
     self.description = params.description
     self.status = params.status
     self.remote_updated_at = params.updated_at
+    save
   end
 
-  def backfill_message_data(id)
-    message_data = Desk.case_message(id)
+  def backfill_message_data
+    Messages::BackfillData.perform_async(id)
+  end
 
-    if message.present?
-      message.remote_created_at = message_data.created_at
-      message.body = message_data.body
-    else
-      build_message(remote_created_at: message_data.created_at, body: message_data.body)
+  def backfill_label_data(label_ids)
+    label_ids.each do |label_id|
+      Labels::BackfillData.perform_async(id, label_id)
     end
   end
 end
