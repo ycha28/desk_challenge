@@ -20,9 +20,9 @@ class Case < ActiveRecord::Base
     Messages::BackfillData.perform_at(10.seconds.from_now, id)
   end
 
-  def backfill_label_data(label_ids)
-    label_ids.each do |label_id|
-      Labels::BackfillData.perform_at(10.seconds.from_now, id, label_id)
+  def backfill_label_data(label_service_ids)
+    label_service_ids.each do |label_service_id|
+      Labels::BackfillData.perform_at(10.seconds.from_now, id, label_service_id)
     end
   end
 end
