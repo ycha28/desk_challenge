@@ -24,7 +24,11 @@ ActiveRecord::Schema.define(version: 20150226033305) do
     t.text     "description"
     t.string   "status"
     t.datetime "remote_updated_at"
-    t.integer  "filter_id"
+  end
+
+  create_table "cases_filters", force: true do |t|
+    t.integer "case_id"
+    t.integer "filter_id"
   end
 
   create_table "cases_labels", force: true do |t|

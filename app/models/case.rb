@@ -1,8 +1,10 @@
 class Case < ActiveRecord::Base
-  belongs_to :filter
   has_one :message, :dependent => :destroy
+  has_and_belongs_to_many :filters
   has_and_belongs_to_many :labels
 
+  scope :from_filters, ->(n) { joins(:filters).where(:filters => {:id => n}) }
+ 
   def backfill_data(params)
     self.service_id = params.id
     self.blurb = params.blurb

@@ -9,7 +9,7 @@
         <th>Assigned</th>
         <th>Priority</th>
       </tr>
-      <tr ng-repeat="case in cases" ng-click="openCase(case)">
+      <tr ng-repeat="case in filteredCases" ng-click="openCase(case)">
         <td>{{case.status}}</td>
         <td>{{case.subject}}</td>
         <td>{{case.customer}}</td>

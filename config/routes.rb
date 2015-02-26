@@ -2,7 +2,9 @@ DeskChallenge::Application.routes.draw do
   root 'home#index'
   resources :cases, :only => [:index, :show, :update]
   resources :labels, :only => [:index, :create]
-  resources :filters, :only => [:index]
+  resources :filters, :only => [:index] do
+    resources :cases, :only => [:index], controller: 'filters/cases'
+  end
 
   # Sidekiq administration
   require 'sidekiq/web'

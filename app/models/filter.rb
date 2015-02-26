@@ -1,5 +1,5 @@
 class Filter < ActiveRecord::Base
-  has_many :cases
+  has_and_belongs_to_many :cases
 
   scope :active, -> { where(active: true) }
 
