@@ -4,17 +4,15 @@
       <tr>
         <th>Status</th>
         <th>Subject</th>
-        <th>Customer</th>
+        <th>Labels</th>
         <th>Updated</th>
-        <th>Assigned</th>
         <th>Priority</th>
       </tr>
       <tr ng-repeat="case in cases" ng-click="openCase(case)">
         <td>{{case.status}}</td>
         <td>{{case.subject}}</td>
-        <td>{{case.customer}}</td>
+        <td>{{case.label_names}}</td>
         <td>{{case.remote_updated_at | date : 'MMM d, yyyy'}}</td>
-        <td>{{case.assigned}}</td>
         <td>{{case.priority}}</td>
       </tr>
     </table>

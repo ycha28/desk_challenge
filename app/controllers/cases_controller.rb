@@ -2,7 +2,7 @@ class CasesController < ApplicationController
   respond_to :json, :only => [:index, :show, :update]
 
   def index
-    @cases = Case.all
+    @cases = Case.includes(:labels)
     respond_with @cases
   end
 
