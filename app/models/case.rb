@@ -1,4 +1,5 @@
 class Case < ActiveRecord::Base
+  belongs_to :filter
   has_one :message, :dependent => :destroy
   has_and_belongs_to_many :labels
 
@@ -14,12 +15,12 @@ class Case < ActiveRecord::Base
   end
 
   def backfill_message_data
-    Messages::BackfillData.perform_async(id)
+    Messages::BackfillData.perform_at(10.seconds.from_now, id)
   end
 
   def backfill_label_data(label_ids)
     label_ids.each do |label_id|
-      Labels::BackfillData.perform_async(id, label_id)
+      Labels::BackfillData.perform_at(10.seconds.from_now, id, label_id)
     end
   end
 end

@@ -1,12 +1,9 @@
 caseControllers = angular.module('caseControllers', ['ngSanitize'])
 
-caseControllers.controller('CaseListController', [ '$scope', 'Case', '$location'
-  ($scope, Case, $location) ->
+caseControllers.controller('CaseListController', [ '$scope', 'Case', 'Filter', '$location'
+  ($scope, Case, Filter, $location) ->
     $scope.cases = Case.index()
-    $scope.filters = [
-      {name: 'Unassigned', value: 'unassigned'},
-      {name: 'All', value: 'all'}
-    ]
+    $scope.filters = Filter.index()
 
     $scope.openCase = (client) ->
       $location.path('/cases/' + client.id)
@@ -34,7 +31,7 @@ caseControllers.controller('CaseDetailController', ['$scope', '$routeParams', '$
       )
     )
 
-    $scope.update = () ->
+    $scope.update = ->
       $scope.case.status = $scope.selectedStatus.value
       $scope.case.priority = $scope.selectedPriority.value
       $scope.case.label_ids = $scope.selectedLabelOptions.map (label) -> label.id

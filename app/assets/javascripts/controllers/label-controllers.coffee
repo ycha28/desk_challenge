@@ -4,7 +4,7 @@ labelControllers.controller('LabelListController', ['$scope', '$location', 'Labe
   ($scope, $location, Label) ->
     $scope.labels = Label.index()
 
-    $scope.create = () ->
+    $scope.create = ->
       Label.create(@label, (l, putRespnoseHeaders) ->
         $location.path('/cases')
       )
