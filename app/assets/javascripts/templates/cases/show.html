@@ -10,17 +10,17 @@
       <div class="form-group">
         <div class="col-md-6">
           <label for="status">Status</label>
-          <select class="form-control" ng-model="selectedStatus" ng-options='statusOption.name for statusOption in statusOptions' required></select>
+          <select name="status" class="form-control" ng-model="selectedStatus" ng-options='statusOption.name for statusOption in statusOptions' required></select>
         </div>  
         <div class="col-md-6">
           <label for="priority">Priority</label>
-          <select class="form-control" ng-model="selectedPriority" ng-options='priorityOption.name for priorityOption in priorityOptions' required></select>
+          <select name="priority" class="form-control" ng-model="selectedPriority" ng-options='priorityOption.name for priorityOption in priorityOptions' required></select>
         </div>
       </div>
       <div class="form-group">
         <div class="col-md-12">
           <label for="labels">Labels</label>
-          <isteven-multi-select input-model="labelOptions" output-model="selectedLabelOptions" button-label="name" item-label="name" tick-property="ticked"></isteven-multi-select>
+          <isteven-multi-select name="labels" input-model="labelOptions" output-model="selectedLabelOptions" button-label="name" item-label="name" tick-property="ticked"></isteven-multi-select>
         </div>
       </div>
       <div class="form-group">
