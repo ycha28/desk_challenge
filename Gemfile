@@ -56,6 +56,7 @@ group :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver', '>=2.45.0.dev3'
   gem 'launchy'
+  gem 'shoulda-matchers'
 end
 
 group :production do
