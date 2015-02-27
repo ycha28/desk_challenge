@@ -40,15 +40,22 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rspec-rails', "~> 2.0"
   gem 'factory_girl_rails', "~> 4.0"
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'selenium-webdriver'
   gem 'zeus'
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'dotenv-rails'
+  gem 'faker'
+end
+
+group :test do
+  gem 'rspec-rails', "~> 2.0"
+  gem 'turnip'
+  gem 'capybara'
+  gem 'capybara-angular'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'launchy'
 end
 
 group :production do
