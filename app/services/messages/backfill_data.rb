@@ -1,4 +1,4 @@
-class Messages::MessageScraper
+class Messages::BackfillData
   attr_reader :desk_case, :message_data
   def initialize(case_id)
     @desk_case = Case.find(case_id)

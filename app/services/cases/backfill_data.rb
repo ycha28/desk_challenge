@@ -1,4 +1,4 @@
-class Cases::CaseListScraper
+class Cases::BackfillData
   def perform
     cases_data.each do |case_data|
       desk_case = Case.find_or_initialize_by(service_id: case_data.id)

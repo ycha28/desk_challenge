@@ -1,4 +1,4 @@
-class Filters::CaseDataScraper
+class Filters::BackfillCasesData
   attr_reader :filter
   def initialize(id)
     @filter = Filter.find(id)

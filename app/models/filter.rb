@@ -11,6 +11,6 @@ class Filter < ActiveRecord::Base
   end
 
   def backfill_cases_data
-    Filters::BackfillCasesData.perform_at(10.seconds.from_now, id)
+    Filters::BackfillCasesDataWorker.perform_at(10.seconds.from_now, id)
   end
 end

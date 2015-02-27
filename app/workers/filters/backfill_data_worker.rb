@@ -1,8 +1,8 @@
-class Filters::BackfillData
+class Filters::BackfillDataWorker
   include Sidekiq::Worker
   sidekiq_options queue: 'filters'
 
   def perform
-    Filters::FiltersScraper.new.perform
+    Filters::BackfillData.new.perform
   end
 end

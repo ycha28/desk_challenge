@@ -17,12 +17,10 @@ class Case < ActiveRecord::Base
   end
 
   def backfill_message_data
-    Messages::BackfillData.perform_at(10.seconds.from_now, id)
+    Messages::BackfillDataWorker.perform_at(10.seconds.from_now, id)
   end
 
   def backfill_label_data(label_service_ids)
-    label_service_ids.each do |label_service_id|
-      Labels::BackfillData.perform_at(10.seconds.from_now, id, label_service_id)
-    end
+    self.labels = Label.where(service_id: label_service_ids)
   end
 end

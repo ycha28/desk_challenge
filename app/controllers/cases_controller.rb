@@ -15,6 +15,7 @@ class CasesController < ApplicationController
     @case = Case.find(params[:id])
 
     if @case.update(case_params)
+      Cases::UpdateWorker.perform_async(@case.id)
       head :ok
     else
       respond_with @case.errors.full_messages

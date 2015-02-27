@@ -1,4 +1,4 @@
-class Filters::FiltersScraper
+class Filters::BackfillData
   def perform
     filters_data.each do |filter_data|
       filter = Filter.find_or_initialize_by(service_id: filter_data.id)

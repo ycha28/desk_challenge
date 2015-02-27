@@ -1,8 +1,8 @@
-class Filters::BackfillCasesData
+class Filters::BackfillCasesDataWorker
   include Sidekiq::Worker
   sidekiq_options queue: 'filters'
 
   def perform(id)
-    Filters::CaseDataScraper.new(id).perform
+    Filters::BackfillCasesData.new(id).perform
   end
 end
