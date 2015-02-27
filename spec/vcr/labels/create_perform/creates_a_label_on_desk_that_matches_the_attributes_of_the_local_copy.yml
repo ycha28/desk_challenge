@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mercuryfish.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: "{\"name\":\"A new label\"}"
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      content-type:
+      - application/json
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="87d8564938fcec2fcdfc79b835df5852",
+        oauth_signature="ZqWsYvFy18oixl7GNZ9gL9zZoAI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425066099", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:41:39 GMT
+      etag:
+      - "\"14250660999796932\""
+      location:
+      - https://mercuryfish.desk.com/api/v2/labels/2409982
+      server:
+      - nginx
+      status:
+      - 201 Created
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - invalidate, pass
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '21'
+      x-request-id:
+      - de64d6da10006615f7d336663e6be079
+      x-runtime:
+      - '0.080091'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '180'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2409982,\"name\":\"A new label\",\"types\":[\"case\",\"macro\"],\"description\":null,\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2409982\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:41:39 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels/2409982
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="23683ad5dd00a010811f464e335792aa",
+        oauth_signature="CML849QV%2F0n3SGNNaWohCNC2NCU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425066099", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:41:40 GMT
+      etag:
+      - "\"40efb658573af161827cec95d6601d1a\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '20'
+      x-request-id:
+      - 364e1ccc086e684486e2acaca90fe103
+      x-runtime:
+      - '0.073294'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '180'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2409982,\"name\":\"A new label\",\"types\":[\"case\",\"macro\"],\"description\":null,\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2409982\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:41:39 GMT
+recorded_with: VCR 2.9.3

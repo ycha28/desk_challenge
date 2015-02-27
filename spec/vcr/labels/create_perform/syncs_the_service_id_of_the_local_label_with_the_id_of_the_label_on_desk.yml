@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mercuryfish.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: "{\"name\":\"Toney Farrell IV\"}"
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      content-type:
+      - application/json
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="c47b92a399cbc4b4f06d49a751833a0b",
+        oauth_signature="uDzTiBzeWMdCNmqyH2oXeIxCJ%2BE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064834", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:20:35 GMT
+      etag:
+      - "\"14250648350917080\""
+      location:
+      - https://mercuryfish.desk.com/api/v2/labels/2409953
+      server:
+      - nginx
+      status:
+      - 201 Created
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - invalidate, pass
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '57'
+      x-rate-limit-reset:
+      - '25'
+      x-request-id:
+      - 535525767a1f52f559b805496bca265a
+      x-runtime:
+      - '0.105244'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '185'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2409953,\"name\":\"Toney Farrell IV\",\"types\":[\"case\",\"macro\"],\"description\":null,\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2409953\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:20:34 GMT
+recorded_with: VCR 2.9.3

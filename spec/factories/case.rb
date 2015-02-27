@@ -7,6 +7,5 @@ FactoryGirl.define do
     status { ['open', 'pending', 'resolved'].sample }
     service_id { rand(10000000) }
     remote_updated_at { Time.now }
-    message { factory :message }
   end
 end

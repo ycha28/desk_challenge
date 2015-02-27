@@ -38,7 +38,7 @@ describe Case do
   end
 
   describe '#backfill_label_data' do
-    let(:labels) { [double('Label 1'), double('Label 2')] }
+    let(:labels) { [double('Label 1', service_id: 1), double('Label 2', service_id: 2)] }
 
     it "should associate the case with the labels sent in the params" do
       Label.stub_chain(:where, :service_id) { labels }

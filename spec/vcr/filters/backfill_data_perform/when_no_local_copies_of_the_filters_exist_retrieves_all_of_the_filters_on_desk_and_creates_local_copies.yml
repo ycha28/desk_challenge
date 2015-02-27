@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="3f228812c54af0926d42e1e0c873b88b",
+        oauth_signature="Mr5VjOrhapjx8BGugjp4wyj2kXQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425065629", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:33:50 GMT
+      etag:
+      - "\"f614a06b0bdcdd60e704963d2314574c\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '57'
+      x-rate-limit-reset:
+      - '10'
+      x-request-id:
+      - f728795122385a7509fedf11c663a6d8
+      x-runtime:
+      - '0.068808'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '3307'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":2310369,\"name\":\"Inbox\",\"position\":1,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310369\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310369/cases\",\"class\":\"case\"}}},{\"id\":2310370,\"name\":\"All
+        Cases\",\"position\":2,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310370\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310370/cases\",\"class\":\"case\"}}},{\"id\":2310371,\"name\":\"My
+        Cases\",\"position\":3,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310371\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310371/cases\",\"class\":\"case\"}}},{\"id\":2310372,\"name\":\"Unassigned
+        Cases\",\"position\":4,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310372\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310372/cases\",\"class\":\"case\"}}},{\"id\":2310373,\"name\":\"My
+        Group's Unresolved Cases\",\"position\":5,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310373\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310373/cases\",\"class\":\"case\"}}},{\"id\":2310374,\"name\":\"All
+        Unresolved Cases\",\"position\":6,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310374\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310374/cases\",\"class\":\"case\"}}},{\"id\":2310375,\"name\":\"Recently
+        Updated Cases\",\"position\":7,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310375\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310375/cases\",\"class\":\"case\"}}},{\"id\":2310376,\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"position\":8,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310376\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310376/cases\",\"class\":\"case\"}}},{\"id\":2310377,\"name\":\"Outbox\",\"position\":13,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310377\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310377/cases\",\"class\":\"case\"}}},{\"id\":2310378,\"name\":\"Deleted
+        Cases\",\"position\":14,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310378\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310378/cases\",\"class\":\"case\"}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:33:50 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="335b94ffa83fa2b0e3ee5b3e97bfc12f",
+        oauth_signature="25Zl9udFiMk8mdZ8sj2OmZXHu7M%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425065424", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:30:25 GMT
+      etag:
+      - "\"14250652954193700\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '35'
+      x-request-id:
+      - 69a2c1a0e6eeb725d0491df150f51004
+      x-runtime:
+      - '0.060807'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '2047'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":9,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":2400545,\"name\":\"Abandoned
+        Chats\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"Abandoned
+        Chats\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400545\",\"class\":\"label\"}}},{\"id\":2400544,\"name\":\"Escalated\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"Escalated\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400544\",\"class\":\"label\"}}},{\"id\":2400541,\"name\":\"Example\",\"types\":[\"case\"],\"description\":\"Example\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400541\",\"class\":\"label\"}}},{\"id\":2400539,\"name\":\"Feedback\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"Feedback\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400539\",\"class\":\"label\"}}},{\"id\":2400540,\"name\":\"More
+        Info\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"More
+        Info\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400540\",\"class\":\"label\"}}},{\"id\":2400543,\"name\":\"Negative
+        Feedback\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"Negative
+        Feedback\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400543\",\"class\":\"label\"}}},{\"id\":2409968,\"name\":\"Oleta
+        McClure\",\"types\":[\"case\",\"macro\"],\"description\":null,\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2409968\",\"class\":\"label\"}}},{\"id\":2400542,\"name\":\"Sample
+        Case\",\"types\":[\"case\"],\"description\":\"Sample Case\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400542\",\"class\":\"label\"}}},{\"id\":2400538,\"name\":\"Sample
+        Macros\",\"types\":[\"macro\"],\"description\":\"Sample Macros\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400538\",\"class\":\"label\"}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:30:24 GMT
+recorded_with: VCR 2.9.3

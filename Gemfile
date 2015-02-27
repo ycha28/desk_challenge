@@ -57,6 +57,8 @@ group :test do
   gem 'selenium-webdriver', '>=2.45.0.dev3'
   gem 'launchy'
   gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'fakeweb'
 end
 
 group :production do

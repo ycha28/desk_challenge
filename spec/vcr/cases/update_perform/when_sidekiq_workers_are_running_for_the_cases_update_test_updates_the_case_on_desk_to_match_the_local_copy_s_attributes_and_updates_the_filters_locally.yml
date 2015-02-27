@@ -1,0 +1,829 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://mercuryfish.desk.com/api/v2/cases/1
+    body:
+      encoding: UTF-8
+      string: "{\"priority\":5,\"description\":\"Dolore qui ea officia cum.\",\"subject\":\"Exercitationem
+        aut vel possimus.\",\"status\":\"resolved\",\"label_ids\":[1,2,3]}"
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      content-type:
+      - application/json
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="331bf7461b6c9acf5a70c5d6c48d6312",
+        oauth_signature="b7L0LfYLHZj8OEv%2F1kcfTQBkRX8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064940", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:21 GMT
+      etag:
+      - "\"75b9c49f21c45631a1d297931a6b9b5c\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - invalidate, pass
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '42'
+      x-rate-limit-reset:
+      - '39'
+      x-request-id:
+      - 31bb3dc18a538ca8e576186ccdc33109
+      x-runtime:
+      - '0.261980'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1880'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"I want to personally thank
+        you for signing up to try Desk.com! To ensure you get the most out of your
+        trial, here are some helpful tips and quick ways to get started:\\n\\n1. USE
+        IT - You\\u2019ve got 14 days to try us out - please do so and tell us what
+        you t\",\"priority\":5,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T18:46:26Z\",\"changed_at\":\"2015-02-27T19:22:20Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:22:20Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T18:50:17Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"resolved\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Dolore
+        qui ea officia cum.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"Exercitationem aut vel possimus.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:20 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="65c30da69b98e461860fbee25fa540bf",
+        oauth_signature="p2cWrZLzCcmMeDOq24uDRoH%2BB5M%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064940", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:21 GMT
+      etag:
+      - "\"f614a06b0bdcdd60e704963d2314574c\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '41'
+      x-rate-limit-reset:
+      - '39'
+      x-request-id:
+      - 1f5bbf3bdce4b2feae966eb0be78c013
+      x-runtime:
+      - '0.090230'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      transfer-encoding:
+      - chunked
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":2310369,\"name\":\"Inbox\",\"position\":1,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310369\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310369/cases\",\"class\":\"case\"}}},{\"id\":2310370,\"name\":\"All
+        Cases\",\"position\":2,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310370\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310370/cases\",\"class\":\"case\"}}},{\"id\":2310371,\"name\":\"My
+        Cases\",\"position\":3,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310371\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310371/cases\",\"class\":\"case\"}}},{\"id\":2310372,\"name\":\"Unassigned
+        Cases\",\"position\":4,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310372\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310372/cases\",\"class\":\"case\"}}},{\"id\":2310373,\"name\":\"My
+        Group's Unresolved Cases\",\"position\":5,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310373\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310373/cases\",\"class\":\"case\"}}},{\"id\":2310374,\"name\":\"All
+        Unresolved Cases\",\"position\":6,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310374\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310374/cases\",\"class\":\"case\"}}},{\"id\":2310375,\"name\":\"Recently
+        Updated Cases\",\"position\":7,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310375\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310375/cases\",\"class\":\"case\"}}},{\"id\":2310376,\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"position\":8,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310376\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310376/cases\",\"class\":\"case\"}}},{\"id\":2310377,\"name\":\"Outbox\",\"position\":13,\"active\":true,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310377\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310377/cases\",\"class\":\"case\"}}},{\"id\":2310378,\"name\":\"Deleted
+        Cases\",\"position\":14,\"active\":false,\"routing_enabled\":false,\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310378\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/2310378/cases\",\"class\":\"case\"}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:21 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310369/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="b619c329f55e1a9d4f8c476e7cdc4047",
+        oauth_signature="em%2FB4QYXls4E21Gz8iq1lW3OZBM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064941", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:21 GMT
+      etag:
+      - "\"6c5c14556a5c0c6af3dd05c0e8ed5873\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '40'
+      x-rate-limit-reset:
+      - '39'
+      x-request-id:
+      - c6858505c3197e5c93f0349b6482be39
+      x-runtime:
+      - '0.101885'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '3770'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":2,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310369/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310369/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310369/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:21 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310370/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="87d9719266266c4ba6d44fcccc93b578",
+        oauth_signature="8A%2FJ8%2Fq8tWcaZYFNz7fXFSVkKtw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064941", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:22 GMT
+      etag:
+      - "\"2e1763d95a82204bb94474a256abf2ef\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '39'
+      x-rate-limit-reset:
+      - '38'
+      x-request-id:
+      - 28a111409c13c2e4ebc51100008cd52e
+      x-runtime:
+      - '0.120241'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      transfer-encoding:
+      - chunked
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310370/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310370/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310370/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you t\",\"priority\":5,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T18:46:26Z\",\"changed_at\":\"2015-02-27T19:22:20Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:22:20Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T18:50:17Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"resolved\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Dolore
+        qui ea officia cum.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"Exercitationem aut vel possimus.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:21 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310371/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="e0fa425fb7581dbbab2633abf2bcaade",
+        oauth_signature="i5m0ksYN8vElheBPwBiapu4Do4o%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064941", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:22 GMT
+      etag:
+      - "\"60e49d5cc3465e231c0095bba84bf49b\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '38'
+      x-rate-limit-reset:
+      - '38'
+      x-request-id:
+      - f6ca038429b34db04fd9f31b9b2485cf
+      x-runtime:
+      - '0.067187'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      transfer-encoding:
+      - chunked
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":1,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310371/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310371/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310371/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:22 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310372/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="06b0232d3c5537046b3cedc91e2af0ae",
+        oauth_signature="F9nH9Iv5IBTd94o9hLXDTGXY3BU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064942", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:22 GMT
+      etag:
+      - "\"4a260a502644640d6bbad4c55397c134\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '37'
+      x-rate-limit-reset:
+      - '38'
+      x-request-id:
+      - 768c88629791ca1761f565085293346c
+      x-runtime:
+      - '0.075686'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '2183'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":1,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310372/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310372/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310372/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:22 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310373/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="83fc6862d569a7c949e68012f67146ef",
+        oauth_signature="kPjzQTw2kbsgwajbsp6ESdFDcBw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064942", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:23 GMT
+      etag:
+      - "\"78a30d0fdf227dfd715b531c7139d6ac\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '36'
+      x-rate-limit-reset:
+      - '37'
+      x-request-id:
+      - 9d2df35bcca8b5da5ccf231377478baf
+      x-runtime:
+      - '0.090657'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '3770'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":2,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310373/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310373/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310373/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:22 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310374/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="7e4e0979e590c6649267be0d873bddad",
+        oauth_signature="SbfNStytEkyD3WPKcoMWHh7TxR4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064942", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:23 GMT
+      etag:
+      - "\"1e812b94a96646eeb906926c103799f3\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '35'
+      x-rate-limit-reset:
+      - '37'
+      x-request-id:
+      - 54e1af8fab5f5ee06a6d4fc76a7014f8
+      x-runtime:
+      - '0.096627'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '3770'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":2,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310374/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310374/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310374/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:22 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310375/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="a71819a4b4d8a44823aea5e448ff2820",
+        oauth_signature="S5Ajmbs2Zuko%2FUJFp%2Bd42SVmN5M%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064942", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:23 GMT
+      etag:
+      - "\"349885134a4ef93b5d421bccbc39a96e\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '34'
+      x-rate-limit-reset:
+      - '37'
+      x-request-id:
+      - 8fba1e74a9338179249c90fcf9c2185b
+      x-runtime:
+      - '0.079106'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '2183'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":1,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310375/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310375/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310375/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:23 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310376/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="7c55f10bf69901eeb9022ffbf4572679",
+        oauth_signature="hZEcP6sZeOQSV39dgpaG5YQBTrg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064943", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:24 GMT
+      etag:
+      - "\"0955b527e70638a2a79e3769b57faa68\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '33'
+      x-rate-limit-reset:
+      - '36'
+      x-request-id:
+      - 6248a6a517a07e28b6a2ce70bd15b77d
+      x-runtime:
+      - '0.070285'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '341'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":0,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310376/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310376/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310376/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:23 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310377/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="5239d4ce922f8e20b5364203de7be240",
+        oauth_signature="S1o9jHUO8flIo%2FATiAWgrBYDyyo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064943", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:24 GMT
+      etag:
+      - "\"ff14531fa726efd7c8f1cd42e4568b8b\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '32'
+      x-rate-limit-reset:
+      - '36'
+      x-request-id:
+      - a3dbbc1d2efe77dde1b9cb5037d1f0df
+      x-runtime:
+      - '0.051695'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '341'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":0,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310377/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310377/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310377/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:23 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/filters/2310378/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="d40eb6172be87085302465fab87e8bbd",
+        oauth_signature="9oFholudIieR%2F79EUE8MYK9egl0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064943", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:24 GMT
+      etag:
+      - "\"d336e6c3b061079dfc20400ef4688e73\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '31'
+      x-rate-limit-reset:
+      - '36'
+      x-request-id:
+      - f64b19ca5cfb818469f9803c12c05fcd
+      x-runtime:
+      - '0.080508'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '341'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":0,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/2310378/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/2310378/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/2310378/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:24 GMT
+recorded_with: VCR 2.9.3

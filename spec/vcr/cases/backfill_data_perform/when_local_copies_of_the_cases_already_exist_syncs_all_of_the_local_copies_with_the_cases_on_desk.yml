@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="0999f53e195f9920e0c1b423d1113bda",
+        oauth_signature="QuBQ9HB1FfcCu1iUGkg8K9%2FN2tc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425065610", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:33:30 GMT
+      etag:
+      - "\"9b1454cda26f80cdd1bcc67f605dc495\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '30'
+      x-request-id:
+      - 80bf1e196ca1c2fcf0da3b4534cf3f26
+      x-runtime:
+      - '0.105065'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      transfer-encoding:
+      - chunked
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you t\",\"priority\":2,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T19:31:53Z\",\"changed_at\":\"2015-02-27T19:31:57Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:31:57Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T19:22:25Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Quo
+        ut aperiam possimus dignissimos omnis deleniti dolorem quo.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"Getting Started with Your New Account\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Example\"],\"subject\":\"Your
+        free support email address has been activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:33:30 GMT
+recorded_with: VCR 2.9.3

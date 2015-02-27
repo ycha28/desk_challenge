@@ -1,0 +1,559 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="f1d45c29cec76a1a5d4e0b5b78cf4642",
+        oauth_signature="0LnJFk5g9n%2Be36pG0cSlXOolegA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064945", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:26 GMT
+      etag:
+      - "\"24e656d86dcdee64fe3888629b952e5b\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '28'
+      x-rate-limit-reset:
+      - '34'
+      x-request-id:
+      - 4c0fa2f7ac7f17f8d7db79994261b895
+      x-runtime:
+      - '0.086446'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '5628'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"page\":1,\"_links\":{\"self\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you t\",\"priority\":2,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T18:46:26Z\",\"changed_at\":\"2015-02-27T19:22:25Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:22:25Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T19:22:25Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Quo
+        ut aperiam possimus dignissimos omnis deleniti dolorem quo.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"My newly updated message\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":null,\"priority\":9,\"locked_until\":null,\"label_ids\":[2400542,2400539],\"active_at\":\"2015-02-27T16:31:07Z\",\"changed_at\":\"2015-02-22T21:56:24Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T16:31:14Z\",\"first_opened_at\":\"2015-02-22T21:04:40Z\",\"opened_at\":\"2015-02-22T21:04:40Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":null,\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"phone\",\"labels\":[\"Feedback\",\"Sample
+        Case\"],\"subject\":\"The Top 3 Features Our Customers Love!\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/2/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/2/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/2/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. J\",\"priority\":8,\"locked_until\":null,\"label_ids\":[2400541,2403076],\"active_at\":\"2015-02-27T16:31:14Z\",\"changed_at\":\"2015-02-27T04:25:43Z\",\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-27T16:31:15Z\",\"first_opened_at\":\"2015-02-22T21:55:30Z\",\"opened_at\":\"2015-02-22T21:55:30Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"status\":\"pending\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"This
+        should definitely work this time.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:34Z\",\"type\":\"email\",\"labels\":[\"Anotehr
+        test\",\"Example\"],\"subject\":\"Your free support email address has been
+        activated.\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/3/labels\",\"class\":\"label\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/3/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/3/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:25 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases/1/message
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="7896f3126e0e395d985c8aebc62dcc71",
+        oauth_signature="%2FaqESgxEBKqwQZ0fRCcxyqDYg%2FQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064945", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:26 GMT
+      etag:
+      - "\"4c61941c5c61d14a92ad8f66bf07c175\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '27'
+      x-rate-limit-reset:
+      - '34'
+      x-request-id:
+      - 4c1ff0d9fe1e66e03eb4bb6b90da8f66
+      x-runtime:
+      - '0.076994'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1743'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":735739753,\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-22T20:56:12Z\",\"sent_at\":null,\"erased_at\":null,\"hidden_by\":null,\"hidden_at\":null,\"body\":\"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\\n\\n1. USE IT - You\\u2019ve got 14 days to try us out -
+        please do so and tell us what you think!\\n\\n2. TEST OUT YOUR NEW SUPPORT
+        EMAIL - Your new account includes your very own support email address. Send
+        an email to it, watch it pop up in your Agent Desktop, then work to resolve
+        your test case.\\n\\n3. RESOLVE CASES QUICKLY - This article https://support.desk.com/customer/portal/articles/1110369-agent-desktop-orientation
+        gives you an overview of the Agent Desktop, where you'll see everything you
+        need to quickly respond to your customers.\\n\\n4. CONTACT SUPPORT - The Desk.com
+        WOW Team is always here to help you, so please contact them anytime at support@desk.com
+        if you have questions, problems, suggestions, or just want to talk.\\n\\nThanks
+        again for giving us a try. We would love to have you join the Desk.com family!\\n\\nCheers,\\n\\nLeyla
+        D. Seka\\nGM Desk.com\\nsalesforce.com\\n\",\"from\":\"Leyla Seka <support@Desk.com>\",\"to\":null,\"cc\":null,\"bcc\":null,\"client_type\":null,\"direction\":\"in\",\"status\":\"received\",\"subject\":\"Getting
+        Started with Your New Account\",\"hidden\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"splits\":null,\"outbound_mailbox\":null,\"case\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"sent_by\":null,\"erased_by\":null,\"attachments\":{\"href\":\"/api/v2/cases/1/message/attachments\",\"class\":\"attachment\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:26 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels/2400542
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="d2f49b6ef528334f92262c0292fed846",
+        oauth_signature="tVwVmeKnM8R1pjMKqePHWdjA3Xg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064946", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:26 GMT
+      etag:
+      - "\"5dc49352f60f0824d6e656c2ef497951\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '26'
+      x-rate-limit-reset:
+      - '34'
+      x-request-id:
+      - a90a40a3f3e21f2b1c719387788648c5
+      x-runtime:
+      - '0.082000'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2400542,\"name\":\"Sample Case\",\"types\":[\"case\"],\"description\":\"Sample
+        Case\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400542\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:26 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases/2/message
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="eead4eb459b78e26a2c473c6c0fc5736",
+        oauth_signature="CfoSRvdqsnF31Epi%2Bc2CIdC6geQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064946", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:27 GMT
+      etag:
+      - "\"b42f4a7e622d840c9f84e584a350d6cc\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '25'
+      x-rate-limit-reset:
+      - '33'
+      x-request-id:
+      - a78b1bbb0929df0b3b8534eff50f192e
+      x-runtime:
+      - '0.062482'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1313'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":9446741,\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-22T20:56:12Z\",\"sent_at\":null,\"erased_at\":null,\"body\":\"Desk.com
+        makes it easy to WOW your customers because it gives you the tools to offer
+        super fast customer support. \\n\\nHere are 3 features our customers love
+        to use to make offering support fast and easy:\\n\\n1. Macros - Quick shortcuts
+        that allow you to do multiple actions in one click. https://support.desk.com/customer/portal/articles/1380-building-shortcuts-with-macros\\n\\n2.
+        Case Filters - Get organized by using filters to group cases together and
+        prioritize based on specific criteria. https://support.desk.com/customer/portal/articles/2741-understanding-case-filters\\n\\n3.
+        Bulk Updating - Reply to multiple cases at once using our \\\"bulk update\\\"
+        feature. https://support.desk.com/customer/portal/articles/3269-updating-multiple-cases-at-once-with-bulk-update\\n\\nNeed
+        help setting these up? Contact our WOW team at support@desk.com.\\n\",\"direction\":\"in\",\"status\":\"received\",\"entered_at\":\"2015-02-22T20:56:12Z\",\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone_call\"},\"case\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"entered_by\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"erased_by\":null}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:26 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels/2400539
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="037d56461f1858dc415dcf3ab605f360",
+        oauth_signature="wLfJFprKzi9FRp1WnScX0eQIiek%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064946", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:27 GMT
+      etag:
+      - "\"27093dffe05a493a02b7601eff5e597b\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '24'
+      x-rate-limit-reset:
+      - '33'
+      x-request-id:
+      - f7be44ae0607f613188c6225690d4678
+      x-runtime:
+      - '0.080620'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '197'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2400539,\"name\":\"Feedback\",\"types\":[\"case\",\"macro\",\"opportunity\"],\"description\":\"Feedback\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400539\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:27 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases/3/message
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="dfdb21f50410c04ab60d1fe37290236e",
+        oauth_signature="PV7qT3%2BoAzWPsW0u8kug3%2FePO5w%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064947", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:27 GMT
+      etag:
+      - "\"cd851c36e7f07e98568de4c47b458bd0\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '23'
+      x-rate-limit-reset:
+      - '33'
+      x-request-id:
+      - 9081acb2d5dd4c2ccf3cfc9c9a47be8b
+      x-runtime:
+      - '0.066637'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1663'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":735739956,\"created_at\":\"2015-02-22T20:56:34Z\",\"updated_at\":\"2015-02-22T20:56:34Z\",\"sent_at\":null,\"erased_at\":null,\"hidden_by\":null,\"hidden_at\":null,\"body\":\"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@mercuryfish.desk-mail.com. This is
+        your dedicated support email address that you can start using right away without
+        any setup. Just have customers email this address and their messages will
+        appear as cases in the Agent Desktop. \\n\\nIn Admin > Channels > Email (https://mercuryfish.desk.com/admin/channels/email/mailboxes),
+        you can customize this email address by changing how it appears to customers,
+        creating filters, specifying a default language, or designating it for certain
+        groups. This email address is free and the fastest way to receive and reply
+        to customer cases, but you can also add your own external email addresses
+        as well. \\n\\nWith this sample case, you can Update & Resolve to see what
+        your response looks like to a customer. \\n\\n - The Desk.com Support Team\",\"from\":\"\\\"The
+        Desk.com Support Team\\\" <no-reply@desk.com>\",\"to\":\"<support@mercuryfish.desk-mail.com>\",\"cc\":null,\"bcc\":null,\"client_type\":\"unknown\",\"direction\":\"in\",\"status\":\"received\",\"subject\":\"Your
+        free support email address has been activated.\",\"hidden\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"splits\":null,\"outbound_mailbox\":null,\"case\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"customer\":{\"href\":\"/api/v2/customers/299467822\",\"class\":\"customer\"},\"sent_by\":null,\"erased_by\":null,\"attachments\":{\"href\":\"/api/v2/cases/3/message/attachments\",\"class\":\"attachment\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:27 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels/2400541
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="d26ca8e65c8359c38c9fb951a4814684",
+        oauth_signature="Xm%2BfFh9ZOrF2%2Fp7m4lQz4HiIiDQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064947", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:28 GMT
+      etag:
+      - "\"6324fa0ca9ccae5bc51e05dada5ee3eb\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '22'
+      x-rate-limit-reset:
+      - '32'
+      x-request-id:
+      - 2339dd31ecb9766964dfea30bb7bf757
+      x-runtime:
+      - '0.070058'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '173'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2400541,\"name\":\"Example\",\"types\":[\"case\"],\"description\":\"Example\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2400541\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:27 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/labels/2403076
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="f20a205f784c675d453f3abb92bac01a",
+        oauth_signature="F%2BFUHAjKZ5p%2BAp6t2idaRx9hxX0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064947", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:28 GMT
+      etag:
+      - "\"aaeb3dbd87de833fdd6919999e0c0c4e\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '21'
+      x-rate-limit-reset:
+      - '32'
+      x-request-id:
+      - 01257659b6ef9063a27b969a1e61d1cf
+      x-runtime:
+      - '0.092579'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '183'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":2403076,\"name\":\"Anotehr test\",\"types\":[\"case\"],\"description\":\"Anotehr
+        test\",\"enabled\":true,\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/2403076\",\"class\":\"label\"}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:27 GMT
+recorded_with: VCR 2.9.3

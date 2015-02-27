@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://mercuryfish.desk.com/api/v2/cases/1
+    body:
+      encoding: UTF-8
+      string: "{\"priority\":2,\"description\":\"Quo ut aperiam possimus dignissimos
+        omnis deleniti dolorem quo.\",\"subject\":\"My newly updated message\",\"status\":\"open\",\"label_ids\":[1,2,3]}"
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      content-type:
+      - application/json
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="4c5db26833268f00f2e16a2f4ab70437",
+        oauth_signature="hVVxVCbp03BkYnpGlvyJuMqyZzc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064944", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:25 GMT
+      etag:
+      - "\"9458e1271e761e2f1431eeba14c0d2c7\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - invalidate, pass
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '30'
+      x-rate-limit-reset:
+      - '35'
+      x-request-id:
+      - f63d203e321b4c2c5ca3f0da7ebee19c
+      x-runtime:
+      - '0.160008'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1905'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"I want to personally thank
+        you for signing up to try Desk.com! To ensure you get the most out of your
+        trial, here are some helpful tips and quick ways to get started:\\n\\n1. USE
+        IT - You\\u2019ve got 14 days to try us out - please do so and tell us what
+        you t\",\"priority\":2,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T18:46:26Z\",\"changed_at\":\"2015-02-27T19:22:25Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:22:25Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T19:22:25Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Quo
+        ut aperiam possimus dignissimos omnis deleniti dolorem quo.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"My newly updated message\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:24 GMT
+- request:
+    method: get
+    uri: https://mercuryfish.desk.com/api/v2/cases/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Desk.com Ruby Gem 1.0.6
+      authorization:
+      - OAuth oauth_consumer_key="w0yli4Sesq5V7lYP8yI3", oauth_nonce="3a53ff873cae6c4bdd70990502abdf65",
+        oauth_signature="TXZTfkyEs%2BKwTNzcdMAoOLzhha4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1425064944", oauth_token="bbOQuaC7XsChCrO21zpE", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2015 19:22:25 GMT
+      etag:
+      - "\"9458e1271e761e2f1431eeba14c0d2c7\""
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '29'
+      x-rate-limit-reset:
+      - '35'
+      x-request-id:
+      - 808bf887b3c8e8f4a7dee8d2dae58825
+      x-runtime:
+      - '0.067645'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1905'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"I want to personally thank
+        you for signing up to try Desk.com! To ensure you get the most out of your
+        trial, here are some helpful tips and quick ways to get started:\\n\\n1. USE
+        IT - You\\u2019ve got 14 days to try us out - please do so and tell us what
+        you t\",\"priority\":2,\"locked_until\":null,\"label_ids\":[2400542],\"active_at\":\"2015-02-27T18:46:26Z\",\"changed_at\":\"2015-02-27T19:22:25Z\",\"created_at\":\"2015-02-22T20:56:12Z\",\"updated_at\":\"2015-02-27T19:22:25Z\",\"first_opened_at\":\"2015-02-22T21:03:42Z\",\"opened_at\":\"2015-02-27T19:22:25Z\",\"first_resolved_at\":\"2015-02-27T18:52:46Z\",\"resolved_at\":\"2015-02-27T18:52:46Z\",\"status\":\"open\",\"active_notes_count\":0,\"active_attachments_count\":0,\"has_pending_interactions\":false,\"has_failed_interactions\":false,\"description\":\"Quo
+        ut aperiam possimus dignissimos omnis deleniti dolorem quo.\",\"language\":null,\"received_at\":\"2015-02-22T20:56:12Z\",\"type\":\"email\",\"labels\":[\"Sample
+        Case\"],\"subject\":\"My newly updated message\",\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/299467739\",\"class\":\"customer\"},\"labels\":{\"href\":\"/api/v2/cases/1/labels\",\"class\":\"label\"},\"assigned_user\":{\"href\":\"/api/v2/users/22921079\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/484410\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"case_links\":{\"href\":\"/api/v2/cases/1/links\",\"class\":\"case_link\"},\"macro_preview\":{\"href\":\"/api/v2/cases/1/macros/preview\",\"class\":\"macro_preview\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: '1.1'
+  recorded_at: Fri, 27 Feb 2015 19:22:25 GMT
+recorded_with: VCR 2.9.3
