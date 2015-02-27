@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150226033305) do
+ActiveRecord::Schema.define(version: 20150227083522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20150226033305) do
     t.string   "status"
     t.datetime "remote_updated_at"
   end
+
+  add_index "cases", ["service_id"], name: "index_cases_on_service_id", unique: true, using: :btree
 
   create_table "cases_filters", force: true do |t|
     t.integer "case_id"
@@ -43,16 +45,22 @@ ActiveRecord::Schema.define(version: 20150226033305) do
     t.integer "position"
   end
 
+  add_index "filters", ["service_id"], name: "index_filters_on_service_id", unique: true, using: :btree
+
   create_table "labels", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.integer "service_id"
   end
 
+  add_index "labels", ["service_id"], name: "index_labels_on_service_id", unique: true, using: :btree
+
   create_table "messages", force: true do |t|
     t.integer  "case_id"
     t.text     "body"
     t.datetime "remote_created_at"
   end
+
+  add_index "messages", ["case_id"], name: "index_messages_on_case_id", unique: true, using: :btree
 
 end

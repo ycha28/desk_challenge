@@ -4,6 +4,9 @@ describe Case do
   it { should have_one(:message) }
   it { should have_and_belong_to_many(:filters) }
   it { should have_and_belong_to_many(:labels) }
+  it { should validate_presence_of(:subject) }
+  it { should validate_presence_of(:priority) }
+  it { should validate_presence_of(:status) }
 
   let(:desk_case) { Case.new }
 

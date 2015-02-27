@@ -3,6 +3,8 @@ class Case < ActiveRecord::Base
   has_and_belongs_to_many :filters
   has_and_belongs_to_many :labels
 
+  validates_presence_of :subject, :priority, :status
+
   scope :from_filters, ->(n) { joins(:filters).where(:filters => {:id => n}) }
  
   def backfill_data(params)

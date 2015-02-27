@@ -1,6 +1,8 @@
 class Filter < ActiveRecord::Base
   has_and_belongs_to_many :cases
 
+  validates_presence_of :name, :position
+
   scope :active, -> { where(active: true) }
   scope :inactive, -> { where(active: false) }
 
