@@ -15,9 +15,9 @@ dependencies include PostgreSQL, Redis, and Bundler.
 1. Install dependencies: 'bundle install'
 1. Add your development database. Copy `config/database.sample.yml` to `config/database.yml` and run `rake db:create` && `rake db:migrate`. 
 1. Prepare your test database with `rake db:test:prepare`
-1. After being granted access to the following Google Drive folder:
-https://drive.google.com/?utm_source=en&utm_medium=button&utm_campaign=web&utm_content=gotodrive&usp=gtd&ltmpl=drive&pli=1#folders/0BzV01gfNa8rgSG1ZQUM4N1dCTWc
-  2. Copy the contents of the ENV file on Google drive to a new `.env` file located in your root directory.
+1. After being granted access to the following Google Drive folder
+(https://drive.google.com/?utm_source=en&utm_medium=button&utm_campaign=web&utm_content=gotodrive&usp=gtd&ltmpl=drive&pli=1#folders/0BzV01gfNa8rgSG1ZQUM4N1dCTWc)
+Copy the contents of the ENV file on Google drive to a new `.env` file located in your root directory.
 1. Start sidekiq by running `foreman start`
 1. Start the server (`rails s`) and navigate to http://localhost.com:3000
 
@@ -27,4 +27,8 @@ https://drive.google.com/?utm_source=en&utm_medium=button&utm_campaign=web&utm_c
 - `rake scrape_labels_data` Retrieves labels data from Desk
 
 ## Test setup
-The test suite uses Rspec, Capybara, Turnip, and Selenium. To run all of the tests, run `rspec spec`. To run the model tests, run `rspec spec/models`; to run the integration tests, run `rspec spec/integration`; to run the acceptance tests, run `rspec spec/acceptance`.
+The test suite uses Rspec, Capybara, Turnip, and Selenium. 
+- To run all of the tests, run `rspec spec`. 
+- To run the model tests, run `rspec spec/models`.
+- To run the integration tests, run `rspec spec/integration`.
+- To run the acceptance tests, run `rspec spec/acceptance`.
