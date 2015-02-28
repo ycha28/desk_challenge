@@ -1,4 +1,4 @@
 desc "Scrape filters data"
 task :scrape_filters_data => :environment do
-  Filters::BackfillDataWorker.perform_async
+  Filters::BackfillDataWorker.new.perform
 end

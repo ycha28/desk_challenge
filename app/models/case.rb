@@ -19,7 +19,7 @@ class Case < ActiveRecord::Base
   end
 
   def backfill_message_data
-    Messages::BackfillDataWorker.perform_at(10.seconds.from_now, id)
+    Messages::BackfillDataWorker.new.perform(id)
   end
 
   def backfill_label_data(label_service_ids)
@@ -28,7 +28,7 @@ class Case < ActiveRecord::Base
     # If the labels cannot be found in the database, retrieve their data from Desk and create them in a worker
     new_labels = label_service_ids - labels.pluck(:service_id)
     new_labels.each do |label_id|
-      Labels::BackfillCaseDataWorker.perform_at(10.seconds.from_now, id, label_id)
+      Labels::BackfillCaseDataWorker.new.perform(id, label_id)
     end
   end
 end

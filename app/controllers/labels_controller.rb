@@ -10,7 +10,7 @@ class LabelsController < ApplicationController
     @label = Label.new(label_params)
 
     if @label.save
-      Labels::CreateWorker.perform_async(@label.id)
+      Labels::CreateWorker.new.perform(@label.id)
       head :ok
     else
       respond_with @label.errors.full_messages

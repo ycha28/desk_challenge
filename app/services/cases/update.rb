@@ -12,6 +12,6 @@ class Cases::Update
     Desk.update_case(@case.service_id, case_attributes)
 
     # Need to update filters as well
-    Filters::BackfillDataWorker.perform_async
+    Filters::BackfillDataWorker.new.perform
   end
 end
