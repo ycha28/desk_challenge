@@ -1,4 +1,5 @@
 # Desk Challenge
+
 This is a simple service that allows users to access their cases on Desk. Users can modify a case's
 subject, description, priority, or status by submitting a simple form. They can also attach labels to 
 their cases and alter their view of case lists by selecting a case filter. Finally, users can view all
