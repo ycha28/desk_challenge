@@ -15,3 +15,76 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "angular-multi-select/isteven-multi-select";
+
+/* Nav */
+
+.nav {
+  .nav-item {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #5bc0de;
+      text-decoration: none;
+    }
+
+    &:focus {
+      background-color: #2868A0;
+      text-decoration: none;    
+    }
+  }
+}
+
+/* Cases */
+.case-item {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #E9ECEF;
+  }
+}
+
+.case-form {
+  background-color: #183B59;
+  height: 900px;
+  color: #5bc0de;  
+}
+
+.case-filters {
+  background-color: #183B59;
+  height: 900px;
+  color: #E9ECEF;
+
+  header {
+    h4 {
+      padding-left: 37px;
+    }
+  }
+
+  .filter-item {
+    padding: 20px 0px 20px 0;
+    list-style-type: none;
+    cursor: pointer;
+
+    &:hover {
+      a {
+        color: #E9ECEF;
+      }
+    }
+
+    a {
+      font-size: 24;
+      font-weight: bold;
+      text-decoration: none;
+      color: #5bc0de;
+    }
+  }
+}
+
+/* Labels */
+
+.label-form {
+  background-color: #183B59;
+  height: 900px;
+  color: #5bc0de;  
+}

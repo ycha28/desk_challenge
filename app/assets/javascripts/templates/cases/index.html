@@ -8,7 +8,7 @@
         <th>Updated</th>
         <th>Priority</th>
       </tr>
-      <tr ng-repeat="case in cases" ng-click="openCase(case)">
+      <tr class="case-item" ng-repeat="case in cases" ng-click="openCase(case)">
         <td>{{case.status}}</td>
         <td>{{case.subject}}</td>
         <td>{{case.label_names}}</td>
@@ -17,12 +17,14 @@
       </tr>
     </table>
   </section>
-  <section class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">Filters</div>
-      <div class="list-group">
-        <a href="#/filters/{{filter.id}}/cases" class="list-group-item" ng-repeat="filter in filters | orderBy: 'position'">{{filter.name}}</a>
-      </div>
-    </div>
+  <section class="case-filters col-md-4 well">
+    <header>
+      <h4>Case Filters</h4>
+    </header>
+    <ul>
+      <li class="filter-item" ng-repeat="filter in filters | orderBy: 'position'" ng-click="openFilter(filter)">
+        <a href="#/filters/{{filter.id}}/cases">{{filter.name}}</a>
+      </li>
+    </ul>
   </section>
 </section>

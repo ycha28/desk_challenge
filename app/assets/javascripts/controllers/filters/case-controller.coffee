@@ -7,4 +7,10 @@ filteredCaseControllers.controller('FilteredCaseController', ['$scope', '$routeP
 
     $scope.openCase = (client) ->
       $location.path('/cases/' + client.id)
+
+    $scope.openFilter = (client) ->
+      $location.path('/filters/' + client.id + '/cases/')
+
+    $scope.isActive = (viewLocation) ->
+      viewLocation == $location.path()
 ])

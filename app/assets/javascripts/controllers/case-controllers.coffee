@@ -7,6 +7,9 @@ caseControllers.controller('CaseListController', [ '$scope', 'Case', 'Filter', '
 
     $scope.openCase = (client) ->
       $location.path('/cases/' + client.id)
+
+    $scope.openFilter = (client) ->
+      $location.path('/filters/' + client.id + '/cases/')      
 ])
 
 caseControllers.controller('CaseDetailController', ['$scope', '$routeParams', '$location', 'Case', 'Label', 'statusOptions', 'priorityOptions',
